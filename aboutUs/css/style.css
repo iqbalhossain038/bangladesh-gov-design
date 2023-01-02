@@ -1,0 +1,250 @@
+/*================================Common Css============================*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none
+}
+
+/*================================Header Design Css============================*/
+
+.header_Wrapper {
+    display: table;
+}
+
+.header_img {
+    overflow: hidden;
+}
+
+.header_img img {
+    width: 100%;
+}
+
+.menuBar {
+    width: 100%;
+    z-index: 9999;
+    position: relative;
+    background: #ddd;
+    height: 40px;
+}
+
+.menuBar ul li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+.menuBar ul li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+    display: block;
+    padding: 8px 15px;
+}
+.menuBar ul ul {
+    position: absolute;
+    width: 240px;
+    background: #ddd;
+    top: 39px;
+    transform: scaleY(0);
+    visibility: hidden;
+    transform-origin: top;
+    padding: 0;
+}
+.menuBar ul ul li {
+    float: none;
+}
+.menuBar ul ul li a {
+    padding: 7px 15px;
+    background: #ddd  !important;
+}
+.menuBar ul ul li a:hover {
+    background: #ccc !important;
+    color: #222;
+}
+.menuBar ul li:hover a {
+    background: #ccc;
+}
+
+.menuBar ul li:hover ul {
+    transform: scaleY(1);
+    visibility: visible;
+    transition: .2s;
+}
+.menuBar ul ul li:hover a {
+    background: #ccc;
+    color: #222;
+}
+.menuBar ul ul ul {
+    left: 100%;
+    top: 0;
+    background: #ddd !important;
+    border-left: 2px solid #aaa;
+    transform: scaleX(0) !important;
+    visibility: hidden !important;
+    transform-origin: left;
+}
+.menuBar ul ul li:hover ul {
+    transform: scaleX(1) !important;
+    visibility: visible !important;
+    transition: .2s;
+}
+
+.menuBar ul ul ul li a{
+    background: #ddd !important;
+}
+.menuBar ul ul ul li a:hover{
+    background: #ccc !important;
+    color: #222 !important
+}
+.menuBar ul {
+    width: 673px;
+    margin: auto;
+}
+.menuBar ul ul li a i {
+    float: right;
+    color: #555;
+}
+.animation {
+    padding: 5px 12px;
+    background: #111;
+    margin-bottom: 10px;
+}
+
+.animation marquee {
+    color: #ddd;
+}
+
+
+/*=========================About Area===========================*/
+
+section#about_area {
+    background: #F8F8F8;
+}
+
+.about_wrapper {
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+about_list {
+}
+
+.col-sm-4.about_4 h3 {
+    font-size: 22px;
+    background: #ccc;
+    border-radius: 4px;
+    color: #333;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+ul.about_list {
+    box-shadow: 1px 1px 8px 0px;
+}
+
+ul.about_list li a {
+    text-decoration: none;
+    line-height: 25px;
+    color: #333;
+    display: block;
+    border-bottom: 1px solid #999;
+    padding: 5px 9px;
+}
+
+ul.about_list li a:hover {
+    background: #ccc;
+    color: #000;
+}
+.col-sm-8.big h2 {}
+
+.col-sm-8.big h3 {
+    font-size: 22px;
+    background: #ccc;
+    border-radius: 4px;
+    color: #333;
+    padding: 5px 15px;
+}
+
+.col-sm-8.big p {
+    color: #fff;
+    background: #333;
+    padding: 6px 12px;
+    margin: 25px 0;
+}
+.image_a {
+    width: 70%;
+}
+
+.image_a img {
+    width: 80%;
+    margin-left: 30%;
+}
+.col-md-4.foot h2 {
+    font-size: 22px;
+    background: #ccc;
+    border-radius: 4px;
+    color: #333;
+    padding: 5px 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.col-md-4.foot p {
+    color: #333;
+}
+
+.col-md-4.foot {
+    box-shadow: 1px 1px 12px 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 30%;
+    margin-right: 3%;
+    margin-left: 1%;
+}
+
+.col-md-4.foot:last-child {
+    margin-right: 0;
+}
+.col-md-8.address h2 {
+    color: #fff;
+    background: #333;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+.col-md-8.address p {
+    margin: 0;
+    line-height: 26px;
+}
+
+.col-md-8.Jurisdiction h2 {
+    color: #fff;
+    background: #333;
+    padding: 6px 12px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+.col-md-8.Jurisdiction {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/*=========================Footer Area===========================*/
+
+.container-fluid.copyright {
+    background: #333;
+    color: #fff;
+}
+
+.container-fluid.copyright p {
+    text-align: center;
+    padding: 8px;
+}
+
+

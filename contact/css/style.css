@@ -1,0 +1,230 @@
+/*================================Common Css============================*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none
+}
+
+/*================================Header Design Css============================*/
+
+.header_Wrapper {
+    display: table;
+}
+
+.header_img {
+    overflow: hidden;
+}
+
+.header_img img {
+    width: 100%;
+}
+
+.menuBar {
+    width: 100%;
+    z-index: 9999;
+    position: relative;
+    background: #ddd;
+    height: 40px;
+}
+
+.menuBar ul li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+.menuBar ul li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+    display: block;
+    padding: 8px 15px;
+}
+.menuBar ul ul {
+    position: absolute;
+    width: 240px;
+    background: #ddd;
+    top: 39px;
+    transform: scaleY(0);
+    visibility: hidden;
+    transform-origin: top;
+    padding: 0;
+}
+.menuBar ul ul li {
+    float: none;
+}
+.menuBar ul ul li a {
+    padding: 7px 15px;
+    background: #ddd  !important;
+}
+.menuBar ul ul li a:hover {
+    background: #ccc !important;
+    color: #222;
+}
+.menuBar ul li:hover a {
+    background: #ccc;
+}
+
+.menuBar ul li:hover ul {
+    transform: scaleY(1);
+    visibility: visible;
+    transition: .2s;
+}
+.menuBar ul ul li:hover a {
+    background: #ccc;
+    color: #222;
+}
+.menuBar ul ul ul {
+    left: 100%;
+    top: 0;
+    background: #ddd !important;
+    border-left: 2px solid #aaa;
+    transform: scaleX(0) !important;
+    visibility: hidden !important;
+    transform-origin: left;
+}
+.menuBar ul ul li:hover ul {
+    transform: scaleX(1) !important;
+    visibility: visible !important;
+    transition: .2s;
+}
+
+.menuBar ul ul ul li a{
+    background: #ddd !important;
+}
+.menuBar ul ul ul li a:hover{
+    background: #ccc !important;
+    color: #222 !important
+}
+.menuBar ul {
+    width: 673px;
+    margin: auto;
+}
+.menuBar ul ul li a i {
+    float: right;
+    color: #555;
+}
+.animation {
+    padding: 5px 12px;
+    background: #111;
+    margin-bottom: 10px;
+}
+
+.animation marquee {
+    color: #ddd;
+}
+
+
+/*=========================Box Area===========================*/
+
+/*=========================Contact Area===========================*/
+
+.col-md-12 h3 {
+    font-size: 22px;
+    background: #ccc;
+    border-radius: 3px;
+    color: #333;
+    padding: 5px 15px;
+}
+
+.contact_wrapper {
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.col-md-12 p {
+    margin: 0;
+    line-height: 26px;
+}
+.col-md-4 {
+    margin-top: 30px;
+}
+
+form.form-login.text-center {
+    width: 98%;
+    margin: auto;
+    background: #ddd;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+form.form-login.text-center h2 {
+    color: #333;
+    padding: 15px 0;
+    font-size: 40px;
+}
+
+form.form-login.text-center textarea {
+    width: 99%;
+    height: 200px;
+}
+
+button.btn {
+    background: #4e68ff;
+    color: #fff;
+    transition: .3s;
+    margin: 15px 0;
+}
+
+button.btn:hover {
+    background: #3351ff;
+    color: #fff;
+}
+.col-md-12.bottom h2 {
+    font-size: 16px;
+    background: #ccc;
+    border-radius: 3px;
+    color: #333;
+    padding: 7px 15px;
+}
+
+.box {
+    background: #eee;
+    border: 1px solid #999;
+    padding: 18px 0;
+    margin-bottom: 30px;
+}
+
+.box a {
+    text-decoration: none;
+    color: #333;
+    background: #ddd;
+    padding: 18px;
+    margin-right: -4px;
+}
+
+.box a:last-child {
+    background: #eee;
+}
+
+.box a:hover {
+    background: #ccc;
+}
+.col-md-8.map iframe {
+  width: 100%;
+  margin-top: 30px;
+  height: 89%;
+  margin-bottom: ;
+}
+
+
+
+
+
+
+/*=========================Footer Area===========================*/
+
+.container-fluid.copyright {
+    background: #333;
+    color: #fff;
+}
+
+.container-fluid.copyright p {
+    text-align: center;
+    padding: 8px;
+}
+
+

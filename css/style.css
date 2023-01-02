@@ -1,0 +1,307 @@
+/*================================Common Css============================*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none
+}
+
+/*================================Header Design Css============================*/
+
+.header_Wrapper {
+    display: table;
+}
+
+.header_img {
+    overflow: hidden;
+}
+
+.header_img img {
+    width: 100%;
+}
+
+.menuBar {
+    width: 100%;
+    z-index: 9999;
+    position: relative;
+    background: #ddd;
+    height: 40px;
+}
+
+.menuBar ul li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+.menuBar ul li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+    display: block;
+    padding: 8px 15px;
+}
+.menuBar ul ul {
+    position: absolute;
+    width: 240px;
+    background: #ddd;
+    top: 39px;
+    transform: scaleY(0);
+    visibility: hidden;
+    transform-origin: top;
+    padding: 0;
+}
+.menuBar ul ul li {
+    float: none;
+}
+.menuBar ul ul li a {
+    padding: 7px 15px;
+    background: #ddd  !important;
+}
+.menuBar ul ul li a:hover {
+    background: #ccc !important;
+    color: #222;
+}
+.menuBar ul li:hover a {
+    background: #ccc;
+}
+
+.menuBar ul li:hover ul {
+    transform: scaleY(1);
+    visibility: visible;
+    transition: .2s;
+}
+.menuBar ul ul li:hover a {
+    background: #ccc;
+    color: #222;
+}
+.menuBar ul ul ul {
+    left: 100%;
+    top: 0;
+    background: #ddd !important;
+    border-left: 2px solid #aaa;
+    transform: scaleX(0) !important;
+    visibility: hidden !important;
+    transform-origin: left;
+}
+.menuBar ul ul li:hover ul {
+    transform: scaleX(1) !important;
+    visibility: visible !important;
+    transition: .2s;
+}
+
+.menuBar ul ul ul li a{
+    background: #ddd !important;
+}
+.menuBar ul ul ul li a:hover{
+    background: #ccc !important;
+    color: #222 !important
+}
+.menuBar ul {
+    width: 673px;
+    margin: auto;
+}
+.menuBar ul ul li a i {
+    float: right;
+    color: #555;
+}
+.animation {
+    padding: 5px 12px;
+    background: #111;
+    margin-bottom: 10px;
+}
+
+.animation marquee {
+    color: #ddd;
+}
+
+
+/*=========================Box Area===========================*/
+
+
+.box_wrapper {
+    overflow: hidden;
+}
+
+.col-md-4.sub_box img {
+    width: 25%;
+    float: left;
+    border-radius: 10px;
+}
+
+.row.main_box {
+}
+
+.col-md-4.sub_box {
+}
+
+.col-md-4.sub_box h2 {
+    font-size: 22px;
+    background: #ccc;
+    border-radius: 10px;
+    color: #333;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+ul.list {
+    margin-left: 100px;
+}
+
+ul.list li a {
+    color: #333;
+    text-decoration: none;
+    line-height: 27px;
+}
+
+ul.list li a:hover {
+    color: #2C3B92;
+}
+
+/*=========================Information Area===========================*/
+
+.info_wrapper {
+    overflow: hidden;
+}
+
+.col-md-4.info h2 {font-size: 22px;background: #ccc;border-radius: 4px;color: #333;padding: 5px 15px;text-align: center;}
+
+.col-md-4.info {
+    border: 1px solid #999;
+}
+
+ul.info_list li a {
+    text-decoration: none;
+    line-height: 25px;
+    color: #333;
+    display: block;
+}
+
+ul.info_list li a:hover {
+    color: #2C3B92;
+}
+
+.col-md-4.info a {
+}
+a.a_right {
+    float: right;
+}
+.col-md-8.info_btn {
+    border: 1px solid #ccc;
+}
+
+.col-md-8.info_btn button {
+    padding: 5px 12px;
+    margin-top: 5px;
+    background: #333;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.col-md-8.info_btn button:hover {
+    background: #0d6efd;
+}
+
+ul.b_list li a {text-decoration: none;color: #333;line-height: 29px;display: block;}
+
+ul.b_list li a:hover {
+    color: #2C3B92;
+}
+
+ul.b_list li a i {
+    margin-right: 4px;
+}
+
+.col-md-8.info_btn button:first-child {
+    background: #0d6efd;
+}
+section#bgd {
+    background: #f5f5f5;
+    padding: 30px 0;
+}
+
+section#bg {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/*=========================Man Info Area===========================*/
+
+
+section#man_info {
+    background: #F5F5F5;
+    padding: 30px 0;
+}
+
+.man_wrapper {
+    overflow: hidden;
+    width: 95%;
+    margin: auto;
+}
+.col-md-4.man h2 {
+    font-size: 22px;
+    background: #ccc;
+    border-radius: 4px;
+    color: #333;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.col-md-4.man img {
+    width: 40%;
+    float: left;
+}
+
+.col-md-4.man p:first-child {}
+
+.col-md-4.man p {
+    margin: 0;
+}
+.wrap {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.wrap p {
+    font-weight: bold;
+    line-height: 19px;
+    color: #333;
+}
+
+.wrap span {
+    font-size: 12px;
+    color: #2C3B92;
+    cursor: pointer;
+}
+
+.wrap span:hover {
+    color: #fb5200;
+}
+
+ul.service li a {
+    color: #333;
+    text-decoration: none;
+    line-height: 27px;
+}
+
+ul.service li a:hover {
+    color: #0D6EFD;
+}
+
+/*=========================Footer Area===========================*/
+
+.container-fluid.copyright {
+    background: #333;
+    color: #fff;
+}
+
+.container-fluid.copyright p {
+    text-align: center;
+    padding: 8px;
+}
+
+

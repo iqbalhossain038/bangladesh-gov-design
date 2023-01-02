@@ -1,0 +1,41 @@
+@media only screen and (min-width:200px) and (max-width:965px){
+    .col-md-4.sub_box img {
+	width: 105px;
+}
+    ul.list {
+	margin-left: 32%;
+}
+}
+
+
+@media only screen and (min-width:200px) and (max-width:767px){
+    .col-md-4.sub_box img {
+	width: 105px;
+}
+    ul.list {
+	margin-left: 32%;
+}
+    .col-md-4.sub_box img {
+	width: 30%;
+}
+    .col-md-4.sub_box {
+	margin-bottom: 25px;
+}
+    ul.list {
+	margin: 2% 28%;
+	width: 100%;
+}
+    .col-md-4.man {
+	margin-bottom: 30px;
+}
+    .col-md-4.man img {
+	width: 23%;
+	margin-left: 20%;
+}
+    .wrap {
+	margin: 8% 22%;
+	text-align: center;
+}
+    
+    
+}
